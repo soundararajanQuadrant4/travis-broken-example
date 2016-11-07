@@ -1,8 +1,6 @@
-language: php
-php:
-  - 5.5
-  - 5.4
-  - hhvm
-script: phpunit Test.php
-
+deploy:
+  provider: s3
+  access_key_id: AKIAIHC76JF3TVQIDUBQ
+  secret_access_key: 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
+  bucket: vishnutravisdemo
 
