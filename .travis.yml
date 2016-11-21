@@ -9,7 +9,5 @@ deploy:
     bucket: jenkinsq4
     application: jenkins
     deployment_group: jenkinsDemo
-    on:
-      branche: master
 after_deploy:
       - ./after_deploy_1.sh
