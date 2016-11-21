@@ -1,12 +1,15 @@
 deploy:
-  provider: s3
-  access_key_id: AKIAIOAKHDQGQVOIESNA
-  secret_access_key: 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
-  bucket: jenkinsq4
-  provider: codedeploy
-  application: jenkins
-  deployment_group: jenkinsDemo
-  on:
-     branche: master
+  - provider: s3
+    access_key_id: AKIAIOAKHDQGQVOIESNA
+    secret_access_key: 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
+    bucket: jenkinsq4
+  - provider: codedeploy
+    access_key_id: AKIAIOAKHDQGQVOIESNA
+    secret_access_key: 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
+    bucket: jenkinsq4
+    application: jenkins
+    deployment_group: jenkinsDemo
+    on:
+      branche: master
 after_deploy:
       - ./after_deploy_1.sh
