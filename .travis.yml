@@ -1,6 +1,12 @@
 deploy:
-  provider: s3
-  access_key_id: AKIAIHC76JF3TWERUBQ
-  secret_access_key: TONU2Fc6Jscs6qvgy56+ZDtrPTc8CBTaeb/gwgFS89
-  bucket: vishnutravisdemo
-
+      provider: codedeploy
+      access_key_id: AKIAIOAKHDQGQVOIESNA
+      secret_access_key: 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
+      bucket: jenkinsq4
+      key: demo/demo.zip
+      application: jenkins
+      deployment_group: jenkinsDemo
+      on:
+        branche: master
+after_deploy:
+      - ./after_deploy_1.sh
