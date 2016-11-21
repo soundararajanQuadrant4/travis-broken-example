@@ -3,7 +3,6 @@ deploy:
       access_key_id: AKIAIOAKHDQGQVOIESNA
       secret_access_key: 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
       bucket: jenkinsq4
-      key: demo/demo.zip
       application: jenkins
       deployment_group: jenkinsDemo
       on:
